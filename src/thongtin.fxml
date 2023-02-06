@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ThongTin">
+   <children>
+      <TextField fx:id="txtFullName" layoutX="37.0" layoutY="54.0" promptText="full name" />
+      <TextField fx:id="txtEmail" layoutX="37.0" layoutY="119.0" promptText="email" />
+      <Button layoutX="37.0" layoutY="169.0" mnemonicParsing="false" onAction="#submit" text="Submit" textFill="#070505" />
+      <Text fx:id="txtInfo" layoutX="339.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Thong tin " wrappingWidth="163.6708984375">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Text>
+      <ListView onMouseClicked="#editSV" fx:id="lv" layoutX="276.0" layoutY="79.0" prefHeight="240.0" prefWidth="209.0" />
+   </children>
+</Pane>

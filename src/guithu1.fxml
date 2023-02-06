@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GuiThu">
+   <children>
+      <TextArea fx:id="txtNoiDung" layoutX="38.0" layoutY="138.0" prefHeight="200.0" prefWidth="243.0" promptText="Nội dung" />
+      <Text layoutX="35.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Người nhận">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Text>
+      <Text layoutX="35.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tiêu đề">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Button layoutX="237.0" layoutY="346.0" mnemonicParsing="false" onAction="#submit" text="Gửi" />
+      <Text layoutX="374.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Danh sách" wrappingWidth="112.64990234375">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Line endX="100.0" layoutX="420.0" layoutY="58.0" startX="-100.0" stroke="#0d0b0b" />
+      <Text layoutX="327.0" layoutY="89.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Người nhận/ Tiêu đề">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtNguoiNhan" layoutX="142.0" layoutY="44.0" prefHeight="31.0" prefWidth="140.0" />
+      <TextField fx:id="txtTieuDe" layoutX="106.0" layoutY="91.0" prefHeight="31.0" prefWidth="174.0" />
+      <Text fx:id="NguoiNhanTieuDeNoiDung" layoutX="327.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nội Dung" wrappingWidth="229.07958984375" />
+   </children>
+</Pane>
