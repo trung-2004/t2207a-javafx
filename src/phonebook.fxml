@@ -5,7 +5,7 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="PhoneBook">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="525.0" prefWidth="805.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="PhoneBook">
    <children>
       <Text layoutX="24.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" wrappingWidth="67.61669921875">
          <font>
@@ -20,12 +20,17 @@
       <TextField fx:id="txtName" layoutX="92.0" layoutY="43.0" prefHeight="31.0" prefWidth="190.0" />
       <TextField fx:id="txtPhone" layoutX="114.0" layoutY="109.0" prefHeight="31.0" prefWidth="166.0" />
       <Button layoutX="24.0" layoutY="185.0" mnemonicParsing="false" onAction="#submit" prefHeight="31.0" prefWidth="180.0" text="Submit" />
-      <ListView fx:id="lv" layoutX="340.0" layoutY="51.0" onMouseClicked="#editPhone" prefHeight="279.0" prefWidth="212.0" />
-      <Text layoutX="401.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phonebook">
+      <Text layoutX="491.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phonebook">
          <font>
             <Font size="18.0" />
          </font>
       </Text>
-      <Button onMouseClicked="#sortPhoneNumber" layoutX="487.0" layoutY="343.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="61.0" text="Sort" />
+      <TableView fx:id="tbview" layoutX="347.0" layoutY="58.0" prefHeight="279.0" prefWidth="379.0">
+        <columns>
+          <TableColumn fx:id="cName" prefWidth="140.0" text="Name" />
+          <TableColumn fx:id="cPhone" prefWidth="174.0" text="Phone" />
+            <TableColumn fx:id="cAction" prefWidth="64.0" text="Action" />
+        </columns>
+      </TableView>
    </children>
 </Pane>
